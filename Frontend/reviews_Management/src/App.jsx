@@ -1,6 +1,8 @@
 import { useState } from 'react'
+import reactLogo from './assets/react.svg'
+import viteLogo from '/vite.svg'
 import './App.css'
-import { HashRouter, Routes, Route } from 'react-router-dom';
+import { BrowsersRouter, Routes, Route } from 'react-router-dom';
 
 import Dashboard from './Components/Dashboard'
 import SignUp from './Components/SignUp';
@@ -14,7 +16,7 @@ function App() {
   
 
   return (
-    <HashRouter>
+    <BrowserRouter>
     <Routes>
   <Route path="/" element={<Login/>} />
   <Route path="/register" element= {<SignUp/>} />
@@ -26,7 +28,7 @@ function App() {
   </Route>
 
   </Routes>
-</HashRouter>
+</BrowserRouter>
 
     
 
